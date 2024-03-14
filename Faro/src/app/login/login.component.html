@@ -1,0 +1,21 @@
+<div class="fondo">
+    <div class="tarjeta">
+        <h2>LOGIN</h2>
+        <!--Tenemos que importar ReactiveFormsModule en app.module-->
+        <div class="login">
+            <form>
+                <div>
+                    <label for="correo"> Email:</label>
+                    <br>
+                    <input type="email" id="email" formControlName="email" required />
+                </div>
+                <div>
+                    <label for="contrasenya">Contraseña:</label>
+                    <br>
+                    <input type="password" id="contrasena" formControlName="contrasena" />
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
