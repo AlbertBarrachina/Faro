@@ -1,3 +1,4 @@
+
 <div class="fondo">
     <div class="tarjeta">
          <!--Tenemos que importar ReactiveFormsModule en app.module-->
@@ -40,3 +41,61 @@
         LOGIN
     </button>
 </div>
+
+<div class="panel-formulario">
+    <form action="login.html">
+        <div class="form-registro">
+            <input type="text" placeholder="Nombre" required minlength="3" maxlength="20">
+            <input type="text" placeholder="Apellidos" required minlength="3" maxlength="50">
+            <input type="text" placeholder="Nick (opcional)" minlength="3" maxlength="20">
+            <input type="email" placeholder="Correo" required>
+            <input type="password" placeholder="Contraseña" required minlength="8">
+            <input type="password" placeholder="Repetir contraseña" required minlength="8">
+        </div>
+        <div>
+            <p>Dinos algunos de tus hobies o intereses</p>
+            <div class="lista-gustos">
+                <div class="tarjeta-gustos">
+                    <input type="checkbox" id="pesca" name="hobbies" value="Pesca">
+                    <label for="pesca">Pesca</label>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Videojuegos</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Musica</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Deporte</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Informatica</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Fiesta</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Cocina</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Carpinteria</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Drogas</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Dibujo</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Disfraces</p>
+                </div>
+                <div class="tarjeta-gustos">
+                    <p>Naturaleza</p>
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="Crear usuario">
+    </form>
+    <p>Ya tienes cuenta? <a routerLink="/login">Inicia sesión!</a></p>
+</div>
+
